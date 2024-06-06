@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    .form {
+        margin-top: 2rem;
+        width: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 2rem 1.5rem;
+
+        h1{
+            color: var(--white);
+            padding-bottom: 1rem;
+        }
+
+        form {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+
+            button {
+                height: 40px;
+                font-size: 1.2rem;
+            }
+        }
+
+        .link {
+            margin-top: 1rem;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: 620px) {
+    .login{
+      width: 90%;
+    }
+  }
+

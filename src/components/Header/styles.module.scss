@@ -1,0 +1,43 @@
+.headerContainer {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.headerContent {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 0 2rem;
+    height: 5rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar a {
+    
+    padding-right: 2rem;
+    transition: color 0.5s;
+    &:hover {
+        color: var(--red-900)
+    }
+}
+
+.navbar button {
+    background:transparent;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    transition: transform 0.8s;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
