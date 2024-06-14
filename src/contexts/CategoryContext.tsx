@@ -27,7 +27,7 @@ export const CategoryProvider = ({children}: ContextProps) => {
             return true;
         } catch (error) {
             toast.error("Ocorreu algum erro na criação da categoria!");
-            console.log("Deu erro: ", error);
+            console.log(error);
             return false;
         }
     }
@@ -37,7 +37,7 @@ export const CategoryProvider = ({children}: ContextProps) => {
             const response = await api.get("/categories")
             return response.data as CategoryProps[]
         } catch (error) {
-            console.log("Ocorreu algum erro: ", error)
+            console.log(error)
             return []
         }
     }

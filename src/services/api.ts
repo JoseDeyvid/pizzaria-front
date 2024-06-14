@@ -7,10 +7,10 @@ import { signOut } from "../contexts/AuthContext";
 
 export const setupAPIClient = () => {
     const cookies = parseCookies()
-    // const {signOut} = useContext(AuthContext);
 
     const api = axios.create({
-        baseURL: "https://pizzariaback.vercel.app",
+        // baseURL: "https://pizzariaback.vercel.app",
+        baseURL: "http://localhost:5000",
         headers: {
             Authorization: `Bearer ${cookies["auth_token"]}`
         }

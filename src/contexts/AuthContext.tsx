@@ -53,12 +53,11 @@ export const AuthProvider = ({ children }: ContextProps) => {
             const token = response.data.token
             saveTokenInCookies(token)
             api.defaults.headers["Authorization"] = `Bearer ${token}`
-            // console.log(api.defaults.headers["Authorization"])
             toast.success("Login realizado com sucesso!");
             Router.push("/dashboard")
         } catch (error) {
             toast.error("Erro ao fazer login!");
-            console.log("Meu erro: ", error)
+            console.log(error)
         }
 
     }
