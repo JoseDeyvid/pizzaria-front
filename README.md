@@ -26,3 +26,5 @@
 ![Product](public/screenshots/5.png?raw=true "Product")
 ![Product-2](public/screenshots/6.png?raw=true "Product-2")
 ![Product-3](public/screenshots/7.png?raw=true "Product-3")
+![Dashboard-2](public/screenshots/8.png?raw=true "Dashboard-2")
+![Dashboard-3](public/screenshots/9.png?raw=true "Dashboard-3")
